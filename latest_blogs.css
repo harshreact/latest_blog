@@ -11,6 +11,7 @@
     --lightpurple:#7A316F;
     --pink:#CD6688;
     --grey:#555;
+    --lightgrey:#D5D5D5;
 }
 body{
     background-color: var(--white);
@@ -52,16 +53,12 @@ h1,h2,h3,h4,h5,h6 {
     font-family: "Inter";
 }
 h1,.title_h1{
-    font-size: 60px;
-    line-height: normal;
-    font-weight: 600;
-    color: var(--lightblue);
-    letter-spacing: -1.2px;
-    font-style: normal;
-}
-h2,.title_h2{
     font-size: 50px;
     font-weight: 500;
+}
+h2,.title_h2{
+    font-size: 24px;
+    font-weight: 600;
 }
 h3,.title_h3{
     font-size: 36px;
@@ -98,6 +95,7 @@ p{
     color: var(--orange);
     font-size: 14px;
     font-family: "Inter";
+    font-weight: 600;
 }  
 /*******************Latest Blog****************************/
 .latest_blogs{
@@ -106,16 +104,20 @@ p{
     grid-template-columns: auto auto;
     gap:30px;
     max-width: 1440px;
+    padding-top: 50px;
 }
 .left_card{
     background-color: var(--white);
     border-radius: 12px;
     padding: 16px;
-    border: 1px solid var(--black);
+    border: 1px solid var(--lightgrey);
     height: fit-content;
 }
-.left_card_img{
-    padding: 24px 24px 0 24px;
+.card_content{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
 }
 .tags{
     display: flex;
@@ -124,17 +126,24 @@ p{
 }
 .company_tag{
     color: var(--purple);
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: rgba(70, 25, 89, 0.1);
 }
 .research_tag{
     color:var(--lightpurple);
+    background-color: rgba(122, 49, 111, 0.1);
+    padding: 5px 10px;
+    border-radius: 15px;
 }
 .presentation_tag{
     color: var(--pink);
 }
 .description{
     color: var(--grey);
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 8px;
+    font-weight: 400;
 }
 
 
